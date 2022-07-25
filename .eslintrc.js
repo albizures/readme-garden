@@ -4,10 +4,7 @@ module.exports = {
 		es2021: true,
 		node: true,
 	},
-	extends: [
-		'next/core-web-vitals',
-		'plugin:@typescript-eslint/recommended',
-	],
+	extends: ['next/core-web-vitals', 'plugin:@typescript-eslint/recommended'],
 	ignorePatterns: ['dist/*'],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
@@ -17,14 +14,9 @@ module.exports = {
 		ecmaVersion: 13,
 		sourceType: 'module',
 	},
-	plugins: ['@typescript-eslint', 'unicorn'],
+	plugins: ['@typescript-eslint'],
 	rules: {
-		'destructuring/in-params': 'error',
-		'destructuring/in-methods-params': 'error',
 		'prefer-const': 'off',
-		'@typescript-eslint/no-unused-vars': [
-			'warn',
-			{ argsIgnorePattern: '^_' },
-		],
+		'@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
 	},
 };

@@ -31,7 +31,7 @@ interface SearchResponse {
 }
 
 async function handler(req: NextApiRequest, res: NextApiResponse) {
-	const { range: lastRange, lastTimeChecked } = await getLastRepoSearch();
+	const { range: lastRange } = await getLastRepoSearch();
 
 	const range = getNextRange(lastRange);
 	const url = searchByStars({

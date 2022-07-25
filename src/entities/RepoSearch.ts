@@ -1,7 +1,6 @@
 import {
 	getDocs,
 	Timestamp,
-	doc,
 	addDoc,
 	query,
 	orderBy,
